@@ -25,6 +25,11 @@ class TxBasicTest(
             AopUtils.isAopProxy(basicService) shouldBe true
         }
 
+        should("tx test") {
+            basicService.tx()
+            basicService.nonTx()
+        }
+
     }
 )
 
